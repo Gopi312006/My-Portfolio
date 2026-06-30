@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">GR</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="themeBtn" class="theme-btn">🌙</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-visual" aria-hidden="true">
+            <span class="bg-icon bg-icon-1">⌘</span>
+            <span class="bg-icon bg-icon-2">⚡</span>
+            <span class="bg-icon bg-icon-3">✦</span>
+            <span class="bg-icon bg-icon-4">◧</span>
+            <span class="bg-icon bg-icon-5">⬢</span>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">GOPI R</span></h1>
+                    <p class="hero-subtitle">Data Analyst | Designer | Creative Thinker</p>
+                    <p class="hero-description">Crafting beautiful and interactive web experiences. I enjoy transforming raw data into meaningful insights and visually appealing dashboards.</p>
+                    <div class="hero-buttons">
+                        <button id="viewCVBtn" class="btn btn-primary" onclick="showResumePanel()">View CV</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="resume hidden">
+        <div class="container">
+            <h2 class="section-title">My Resume</h2>
+            <div id="resumePanel" class="resume-panel hidden">
+                <img id="resumeImage" class="resume-image hidden" alt="Resume Preview">
+                <div id="resumeMessage" class="resume-message hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="C:\Users\GopiRamesh\OneDrive\Documents\mine.jpeg" alt="About Photo" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>Who Am I?</h3>
+                    <p>Welcome to my portfolio! I'm Gopi R, a passionate Data Analyst and UI/UX Designer with a strong interest in transforming data into meaningful insights and designing intuitive digital experiences. I enjoy solving real-world problems through data analysis while creating user-friendly and visually appealing interfaces.
+
+I have hands-on experience with SQL, Python, Microsoft Excel, Power BI, HTML, CSS, JavaScript, and Figma. I am continuously learning new technologies and improving my analytical and design skills to build impactful solutions. As a fresher, I am eager to contribute, learn, and grow in a professional environment.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4 class="stat-number"><span class="counter">2</span>+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4 class="stat-number"><span class="counter">5</span>+</h4>
+                            <p>Course Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4 class="stat-number"><span class="counter">0</span>+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" style="--skill-value: 95%;">
+                    <div class="skill-info">
+                        <h3>HTML & CSS</h3>
+                        <span class="skill-score">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 85%;">
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <span class="skill-score">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 89%;">
+                    <div class="skill-info">
+                        <h3>Python</h3>
+                        <span class="skill-score">89%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 80%;">
+                    <div class="skill-info">
+                        <h3>Power BI</h3>
+                        <span class="skill-score">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 95%;">
+                    <div class="skill-info">
+                        <h3>Excel</h3>
+                        <span class="skill-score">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 88%;">
+                    <div class="skill-info">
+                        <h3>DBMS</h3>
+                        <span class="skill-score">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 85%;">
+                    <div class="skill-info">
+                        <h3>SQL</h3>
+                        <span class="skill-score">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 60%;">
+                    <div class="skill-info">
+                        <h3>Communication</h3>
+                        <span class="skill-score">60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 88%;">
+                    <div class="skill-info">
+                        <h3>Teamwork</h3>
+                        <span class="skill-score">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 85%;">
+                    <div class="skill-info">
+                        <h3>Problem Solving</h3>
+                        <span class="skill-score">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+                <div class="skill-card" style="--skill-value: 76%;">
+                    <div class="skill-info">
+                        <h3>UI/UX Design</h3>
+                        <span class="skill-score">76%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <span class="skill-fill"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-list">
+                <div class="project-box">
+                    <h3>Sales Analysis Dashboard</h3>
+                    <p>This project is a sales performance dashboard that visualizes revenue trends, customer segments, and product performance. It was created using Power BI, Excel, and data visualization techniques to transform raw sales data into actionable business insights.</p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Power BI</span>
+                        <span class="tool-tag">Excel</span>
+                        <span class="tool-tag">Data Visualization</span>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <h3>Real-Time Accident Analysis & Prediction</h3>
+                    <p>This project is a real-time accident analysis and prediction model that monitors traffic incidents and forecasts risk using data-driven methods. It was built with Python, machine learning, and real-time analytics to help identify accident patterns and improve safety decisions.</p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Machine Learning</span>
+                        <span class="tool-tag">Realtime Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive, fast, and scalable websites using modern web technologies and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing beautiful and intuitive user interfaces that provide excellent user experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Optimizing websites for speed and performance to enhance user engagement.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Analysis</h3>
+                    <p>Analyzing raw data to identify trends, patterns, and valuable business insights for better decision-making.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Providing ongoing maintenance and technical support for your web projects.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Excel Reporting</h3>
+                    <p>Using Excel formulas, Pivot Tables, Charts, and data analysis techniques to create insightful reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\da certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\da certificate.jpeg" alt="Data Analytics Professional Certificate" class="certificate-image">
+                        <h3>Data Analytics Master Course</h3>
+                    </a>
+                    <p>Completed certification in advanced data analysis and dashboard reporting.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\internship certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\internship certificate.jpeg" alt="Data Analytics Internship Certificate" class="certificate-image">
+                        <h3>Data Analytics Internship</h3>
+                    </a>
+                    <p>Hands-on experience in data analytics projects and real-world applications.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\html certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\html certificate.jpeg" alt="HTML Certificate" class="certificate-image">
+                        <h3>HTML</h3>
+                    </a>
+                    <p>Verified training on HTML markup and web development fundamentals.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\css certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\css certificate.jpeg" alt="CSS Certificate" class="certificate-image">
+                        <h3>CSS</h3>
+                    </a>
+                    <p>Verified training on CSS styling and web design principles.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\csc certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\csc certificate.jpeg" alt="Diploma in Computer Applications Certificate" class="certificate-image">
+                        <h3>Diploma in Computer Applications</h3>
+                    </a>
+                    <p>Verified training on computer science fundamentals and programming concepts.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\bf certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\bf certificate.jpeg" alt="Bootstrap Framework Certificate" class="certificate-image">
+                        <h3>Bootstrap Framework</h3>
+                    </a>
+                    <p>Verified training on the Bootstrap framework for responsive web development.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="C:\Users\GopiRamesh\OneDrive\Documents\rjs certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\rjs certificate.jpeg" alt="React.js Certificate" class="certificate-image">
+                        <h3>React.js</h3>
+                    </a>
+                    <p>Verified training on the React.js library for building user interfaces.</p>
+                </div>
+                <div class="certificate-card">
+                    <a class="certificate-link" href="file:///C:/Users/GopiRamesh/OneDrive/Documents/ty%20certificate.jpeg" target="_blank" rel="noopener noreferrer">
+                        <img src="C:\Users\GopiRamesh\OneDrive\Documents\ty certificate.jpeg" alt="TypeWriting Certificate" class="certificate-image">
+                        <h3>TypeWritting Certificate</h3>
+                    </a>
+                    <p>Verified training on typing skills and productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'd love to hear from you! Whether you have a project in mind or just want to chat, feel free to reach out.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:your.email@gmail.com">gopisneeha@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <a href="tel:+919789430776">+91 9789430776</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p>Mangadu, Chennai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:gopisneeha@gmail.com" class="social-link" title="Email">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.2l-8 5.3-8-5.3V6l8 5.3L20 6v2.2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/Gopi R" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.02 8h4.96V24H.02V8zm7.49 0h4.75v2.18h.07c.66-1.25 2.27-2.57 4.67-2.57 4.99 0 5.91 3.28 5.91 7.55V24h-4.96v-7.8c0-1.86-.03-4.26-2.6-4.26-2.6 0-3 2.03-3 4.13V24H7.51V8z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Gopi312006" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.286-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.082-.73.082-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.806 1.305 3.492.998.108-.775.42-1.305.763-1.605-2.665-.305-5.467-1.335-5.467-5.93 0-1.31.467-2.38 1.235-3.22-.125-.305-.535-1.53.115-3.185 0 0 1.005-.322 3.295 1.23A11.48 11.48 0 0112 5.8c1.02.005 2.045.14 3.005.41 2.285-1.555 3.29-1.23 3.29-1.23.655 1.655.245 2.88.12 3.185.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.815 1.095.815 2.21 0 1.595-.015 2.88-.015 3.27 0 .32.21.695.825.575C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/SilentNova_31" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.055 1.97.24 2.428.403a4.92 4.92 0 011.675 1.092 4.92 4.92 0 011.093 1.675c.163.458.348 1.258.403 2.428.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.97-.403 2.428a4.92 4.92 0 01-1.092 1.675 4.92 4.92 0 01-1.675 1.093c-.458.163-1.258.348-2.428.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.97-.24-2.428-.403a4.92 4.92 0 01-1.675-1.092 4.92 4.92 0 01-1.093-1.675c-.163-.458-.348-1.258-.403-2.428C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.055-1.17.24-1.97.403-2.428a4.92 4.92 0 011.092-1.675 4.92 4.92 0 011.675-1.093c.458-.163 1.258-.348 2.428-.403C8.417 2.175 8.797 2.163 12 2.163zm0-2.163C8.735 0 8.332.012 7.053.07 5.772.127 4.7.317 3.803.707 2.902 1.096 2.14 1.673 1.467 2.347.793 3.02.216 3.782-.174 4.683c-.39.897-.58 1.969-.637 3.25C-.012 8.332 0 8.735 0 12s.012 3.668.07 4.947c.057 1.281.247 2.353.637 3.25.39.901.967 1.663 1.64 2.336.673.673 1.435 1.25 2.336 1.64.897.39 1.969.58 3.25.637C8.332 23.988 8.735 24 12 24s3.668-.012 4.947-.07c1.281-.057 2.353-.247 3.25-.637.901-.39 1.663-.967 2.336-1.64.673-.673 1.25-1.435 1.64-2.336.39-.897.58-1.969.637-3.25.058-1.279.07-1.682.07-4.947s-.012-3.668-.07-4.947c-.057-1.281-.247-2.353-.637-3.25-.39-.901-.967-1.663-1.64-2.336-.673-.673-1.435-1.25-2.336-1.64C19.3.317 18.228.127 16.947.07 15.668.012 15.265 0 12 0zM12 5.838A6.162 6.162 0 105.838 12 6.169 6.169 0 0012 5.838zm0 10.163A3.998 3.998 0 118 12a3.998 3.998 0 014 4zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" style="color: blue;">
+            <p>&copy; 2026 Gopi R. All rights reserved.</p>
+            <p>Designed & Built with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
