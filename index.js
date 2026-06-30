@@ -80,7 +80,7 @@ const resumeImage = document.getElementById('resumeImage');
 const resumeMessage = document.getElementById('resumeMessage');
 
 // Set your resume image URL here. Use a relative image file in the project or a public URL:
-const resumeUrl = "C:\\Users\\GopiRamesh\\OneDrive\\Documents\\Gopi Resume.jpeg";
+const resumeUrl = "resume.jpeg";
 
 function renderResumeDisplay() {
     if (resumeUrl && resumeImage && resumeMessage) {
